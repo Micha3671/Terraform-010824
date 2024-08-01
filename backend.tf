@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = var.s3_bucket
-    key    = var.s3_key
-    region = var.aws_region
+    bucket = "s3-terraform-260724"
+    key    = "dynamodb-example/terraform.tfstate"
+    region = "eu-central-1"
   }
 }
